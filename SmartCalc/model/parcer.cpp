@@ -176,7 +176,6 @@ void Parser::parseCloseBracket(std::string &expression) {
 // searching func
 bool Parser::isUnaryOperator(Operations operation,
                              std::string &expression) noexcept {
-  std::string hui = expression.c_str() - 1;
   bool plus_or_minus =
       (operation == Operations::ADD || operation == Operations::SUB);
   bool conditions_for_unary =
